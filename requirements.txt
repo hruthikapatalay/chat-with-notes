@@ -22,8 +22,8 @@ PyMuPDF==1.26.3
 
 # OCR fallback for scanned PDF pages.
 # PaddleOCR 3.x requires PaddlePaddle 3.0+.
-paddleocr==3.7.0
-paddlepaddle==3.2.0
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
 
 # Text chunking. We use only this LangChain utility package, not full LangChain.
 langchain-text-splitters==0.3.9
