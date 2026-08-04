@@ -1,0 +1,42 @@
+# Backend web framework
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+
+# Environment variables
+python-dotenv==1.1.1
+pydantic-settings==2.10.1
+email-validator==2.2.0
+
+# Database: PostgreSQL/Supabase through SQLAlchemy
+SQLAlchemy==2.0.42
+psycopg2-binary==2.9.10
+
+# Auth: hand-rolled JWT auth with hashed passwords
+python-jose[cryptography]==3.5.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# PDF text extraction
+PyMuPDF==1.26.3
+
+# OCR fallback for scanned PDF pages.
+# PaddleOCR 3.x requires PaddlePaddle 3.0+.
+paddleocr==3.7.0
+paddlepaddle==3.2.0
+
+# Text chunking. We use only this LangChain utility package, not full LangChain.
+langchain-text-splitters==0.3.9
+
+# Embeddings
+sentence-transformers==5.0.0
+torch==2.7.1
+
+# Local vector search
+faiss-cpu==1.14.3
+
+# HTTP client for Groq's OpenAI-compatible endpoint
+httpx==0.28.1
+
+# Helpful for loading/storing FAISS metadata as JSON
+numpy==2.3.2
